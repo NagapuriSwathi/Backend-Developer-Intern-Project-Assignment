@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header class="bg-secondary-subtle">
+        <nav class="container col-6 d-flex justify-content-evenly">
+                <a href="index.html" class="fw-bold fs-4 text-decoration-none link-success">Home</a>
+                <a href="registration.html" class="fw-bold fs-4 text-decoration-none link-success">Register</a>
+                <a href="login.html" class="fw-bold fs-4 text-decoration-none link-success">Login</a>
+        </nav>
+    </header>
+    <main class="container">
+
+
+
+       <div class="row">
+        
+            <div class="col">
+                <h6 class="text-center my-3 text-primary fw-bold" id="response__output" style="display: none;"></h6>
+            </div>
+
+        <h2 class="text-center my-3">Registration Form</h2>
+            <h6 class="text-center my-3 text-danger fw-bold">* Indicates the field is reqiured</h6>
+
+            <div class="col-8 d-flex align-items-center justify-content-center m-auto">
+                 <form action="" method="POST" class="w-100" id="form__registration">
+                    <label for="name" class="form-label w-100">Name <span class="text-danger fw-bold">*</span>
+                        <input type="text" name="name" id="name" class="form-control" required/>
+                    </label>
+
+                    <br><br>
+
+                    <label for="email" class="form-label w-100">Email <span class="text-danger fw-bold">*</span>
+                        <input type="email" name="email" id="email" class="form-control" required/>
+                    </label>
+
+                    <br><br>
+
+                    <label for="password" class="form-label w-100">Password <span class="text-danger fw-bold">*</span>
+                        <input type="password" name="password" id="password" class="form-control" required/>
+                    </label>
+
+                    <br><br>
+
+                    <label for="role" class="form-label w-100">Role <span class="text-danger fw-bold">*</span>
+                        <select name="role" id="role" class="form-select" required>
+                            <option value="Admin">Admin</option>
+                            <option value="User" selected>User</option>
+                        </select>
+                    </label>
+
+                    <br><br>
+
+                    <button type="submit" class="btn btn-primary w-100" id="button__register">Register</button>
+
+                    <h5 class="text-center my-3">Already have an account ? <a href="login.html">Login</a></h5>
+
+                </form>
+            </div>
+       </div>
+       
+    </main>
+
+    <script src="../JavaScript/registration.js"></script>
+
+    <footer>
+        <p class="text-center bg-primary text-white mt-3">&copy; All Rights Reserved - 2025</p>
+    </footer>
+</body>
+</html>

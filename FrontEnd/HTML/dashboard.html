@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header class="bg-secondary-subtle">
+        <nav class="container col-6 d-flex justify-content-evenly">
+                <a href="index.html" class="fw-bold fs-4 text-decoration-none link-success">Home</a>
+                <a href="registration.html" class="fw-bold fs-4 text-decoration-none link-success">Register</a>
+                <a href="login.html" class="fw-bold fs-4 text-decoration-none link-success">Login</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="row d-flex justify-content-center">
+            <div class="col-4">
+                <button class="btn btn-primary w-100 my-3" id="button__users">Users</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary w-100 my-3" id="button__notes">Notes</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary w-100 my-3" id="button__logout">Logout</button>
+            </div>
+            
+        </section>
+
+        <section class="row d-flex justify-content-center">
+
+                <div class="col-6">
+
+                <div id="display__users">
+                    <h2 class="text-center">Users</h2>
+
+                    <a href="registration.html">
+                    <button class="btn btn-success" id="button__users-add">Add Users</button>
+
+                    </a>
+
+                    <div class="p-2 m-2" id="display__users-list">
+
+                    </div>
+                    
+                </div>
+
+                <div id="display__notes">
+                    <h2 class="text-center">Notes</h2>
+
+                    <a href="addNotes.html">
+                    <button class="btn btn-success" id="button__notess-add">Add Notes</button>
+
+                    </a>
+                    <div class="p-2 m-2"  id="display__notes-list">
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+       
+    </main>
+
+    <script src="../JavaScript/dashboard.js"></script>
+    <footer>
+        <p class="text-center bg-primary text-white mt-3">&copy; All Rights Reserved - 2025</p>
+    </footer>
+</body>
+</html>

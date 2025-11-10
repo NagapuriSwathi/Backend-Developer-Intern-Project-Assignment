@@ -1,0 +1,23 @@
+{
+  "name": "rest-api-with-role-based-access",
+  "version": "1.0.0",
+  "description": "\"REST API with Authentication and Role Based Access using Node Js, Express Js, MongoDB and Vanilla JavaScript\"",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch --env-file=.env server.js"
+  },
+  "author": "Swathi",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-validator": "^7.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.3"
+  }
+}
